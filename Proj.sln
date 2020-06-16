@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.960
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Proj", "Proj\Proj.vcxproj", "{FA719380-A2F7-4A5E-8610-F50473F5A491}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA719380-A2F7-4A5E-8610-F50473F5A491}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{FA719380-A2F7-4A5E-8610-F50473F5A491}.Debug|x64.ActiveCfg = Debug|x64
+		{FA719380-A2F7-4A5E-8610-F50473F5A491}.Debug|x64.Build.0 = Debug|x64
+		{FA719380-A2F7-4A5E-8610-F50473F5A491}.Debug|x86.ActiveCfg = Debug|Win32
+		{FA719380-A2F7-4A5E-8610-F50473F5A491}.Debug|x86.Build.0 = Debug|Win32
+		{FA719380-A2F7-4A5E-8610-F50473F5A491}.Release|Any CPU.ActiveCfg = Release|Win32
+		{FA719380-A2F7-4A5E-8610-F50473F5A491}.Release|x64.ActiveCfg = Debug|x64
+		{FA719380-A2F7-4A5E-8610-F50473F5A491}.Release|x64.Build.0 = Debug|x64
+		{FA719380-A2F7-4A5E-8610-F50473F5A491}.Release|x86.ActiveCfg = Release|Win32
+		{FA719380-A2F7-4A5E-8610-F50473F5A491}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {251875BC-F73C-445E-BCDE-D9437592FB9C}
+	EndGlobalSection
+EndGlobal
