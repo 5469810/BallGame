@@ -1,14 +1,14 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#include <Box2D/Box2D.h>
-#include "SFMLDebugDraw.h"
+#include "Box2D/Box2D.h"
+#include "Box2D-SFML Debug Draw/SFMLDebugDraw.h"
 #include "Box2dConverter.h"
 #include <vector>
 #include "Player.h"
 #include "Box.h"
 #include <memory>
 #include "Walls.h"
-#include <SFML/Audio.hpp>
+#include "SFML/Audio.hpp"
 #include <random>
 #include <array>
 #include "GameState.h"
