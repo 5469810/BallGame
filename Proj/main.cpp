@@ -11,6 +11,7 @@
 int main()
 {
 	//begin
+	//begin
 	srand(time(nullptr));
 	Game gameInst(1024,768);
 	gameInst.run();
