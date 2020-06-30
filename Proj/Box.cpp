@@ -1,6 +1,5 @@
 #include "Box.h"
 #include "Box2dConverter.h"
-#include "Box2D-SFML Debug Draw/SFMLDebugDraw.h"
 #include <iostream>
 
 

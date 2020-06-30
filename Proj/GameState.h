@@ -1,7 +1,6 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "Box2D/Box2D.h"
-#include "Box2D-SFML Debug Draw/SFMLDebugDraw.h"
 #include "Box2dConverter.h"
 #include <vector>
 #include "Player.h"
@@ -85,7 +84,6 @@ private:
 	bool m_cool;
 	unsigned int m_level;
 	b2World m_world;
-	SFMLDebugDraw m_debug;
 	sf::Vector2i m_worldSize;
 	Player m_player;
 	sf::Font& m_font;

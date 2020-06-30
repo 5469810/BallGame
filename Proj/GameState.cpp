@@ -97,16 +97,14 @@ void MainMenuState::click()
 
 
 PlayingState::PlayingState(Game *l_game, sf::Font &l_font):
-	GameState(l_game), m_font(l_font), m_world(b2Vec2(0, 15)), m_debug(getGame()->getWind()),
-	m_worldSize(getGame()->getWind().getSize().x / sfdd::SCALE, getGame()->getWind().getSize().y / sfdd::SCALE), m_player(m_world, m_playerPos.x, m_playerPos.y), m_start(true), m_period(sf::Time::Zero),
-	m_timeBuff(sf::seconds(1)), m_playerPos(sf::Vector2i(getGame()->getWind().getSize().x / 2, getGame()->getWind().getSize().y - (sfdd::SCALE / 2)))
+	GameState(l_game), m_font(l_font), m_world(b2Vec2(0, 15)),
+	m_worldSize(getGame()->getWind().getSize().x / SCALE, getGame()->getWind().getSize().y / SCALE), m_player(m_world, m_playerPos.x, m_playerPos.y), m_start(true), m_period(sf::Time::Zero),
+	m_timeBuff(sf::seconds(1)), m_playerPos(sf::Vector2i(getGame()->getWind().getSize().x / 2, getGame()->getWind().getSize().y - (SCALE / 2)))
 {
 	int offsetY = 50;
 	int offsetY2 = 100;
 	int offsetY3 = 20;
 	setCooldownText(offsetY);
-	m_debug.SetFlags(b2Draw::e_shapeBit);
-	m_world.SetDebugDraw(&m_debug);
 	m_world.SetContactListener(this);
 	
 	setBoundaries();
@@ -325,12 +323,12 @@ void PlayingState::PostSolve(b2Contact * l_contact, const b2ContactImpulse * l_i
 	}
 }
 
-void PlayingState::setBoundaries()
+void PlayingState::setBoundaries() 
 {
-	m_boundaries.push_back(std::make_unique<Walls>(m_world, 0, 0, sfdd::SCALE, sfdd::SCALE *m_worldSize.y));
-	m_boundaries.push_back(std::make_unique<Walls>(m_world, 0, (m_worldSize.y - 1)* sfdd::SCALE, m_worldSize.x * sfdd::SCALE, sfdd::SCALE));
-	m_boundaries.push_back(std::make_unique<Walls>(m_world, (m_worldSize.x - 1)*sfdd::SCALE, 0, sfdd::SCALE, (m_worldSize.y - 1)*sfdd::SCALE));
-	m_boundaries.push_back(std::make_unique<Walls>(m_world, 0, 0, sfdd::SCALE *m_worldSize.x, sfdd::SCALE));
+	m_boundaries.push_back(std::make_unique<Walls>(m_world, 0, 0, SCALE, SCALE *m_worldSize.y));
+	m_boundaries.push_back(std::make_unique<Walls>(m_world, 0, (m_worldSize.y - 1)* SCALE, m_worldSize.x * SCALE,SCALE));
+	m_boundaries.push_back(std::make_unique<Walls>(m_world, (m_worldSize.x - 1)*SCALE, 0, SCALE, (m_worldSize.y - 1)*SCALE));
+	m_boundaries.push_back(std::make_unique<Walls>(m_world, 0, 0, SCALE *m_worldSize.x, SCALE));
 }
 
 void PlayingState::loadLevel()
@@ -346,8 +344,8 @@ void PlayingState::loadLevel()
 	}
 	int offsetX = 20;
 	int offsetY = 1;
-	int offset = sfdd::SCALE * 4;
-	int offset2 = sfdd::SCALE * 5;
+	int offset = SCALE * 4;
+	int offset2 = SCALE * 5;
 	for (int i = 0; i < 3; ++i)
 	{
 		bool valid = false;

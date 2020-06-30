@@ -8,6 +8,7 @@ const double PIXELS_PER_METERS = 32.0;
 const double PI = 3.14159265358979323846;
 const double DEGTORAD = 0.0174532925199432957f;
 const double RADTODEG = 57.295779513082320876f;
+const double SCALE = 32.0f;
 
 double pixelsToMeters(const double l_x);
 
